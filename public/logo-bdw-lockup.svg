@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 64" role="img" aria-label="BDW — Bacotan Developer Web">
+  <defs>
+    <linearGradient id="bdw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bdw-bg)"/>
+  <polyline points="17,20 31,32 17,44" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="36" y1="46" x2="49" y2="46" stroke="#fde68a" stroke-width="7" stroke-linecap="round"/>
+  <text x="80" y="42" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="1" fill="#7c3aed">BDW</text>
+  <text x="82" y="57" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.6" fill="#d97706">BACOTAN DEVELOPER WEB</text>
+</svg>

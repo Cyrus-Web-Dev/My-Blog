@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99%; --foreground: 240 10% 10%; --card: 0 0% 100%;
+    --muted: 240 5% 95%; --muted-foreground: 240 4% 42%; --border: 240 6% 88%;
+    --primary: 262 83% 52%; --primary-foreground: 0 0% 100%;
+  }
+  .dark {
+    --background: 240 10% 6%; --foreground: 0 0% 96%; --card: 240 8% 9%;
+    --muted: 240 6% 14%; --muted-foreground: 240 5% 66%; --border: 240 6% 18%;
+    --primary: 262 90% 72%; --primary-foreground: 240 10% 6%;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; }
+  html { scroll-behavior: smooth; }
+}
+
+/* Shiki (rehype-pretty-code) dual theme */
+pre { @apply overflow-x-auto rounded-xl border border-border bg-muted/40 py-4 text-sm; }
+pre code { @apply grid; counter-reset: line; }
+code[data-theme*=" "], code[data-theme*=" "] span { color: var(--shiki-light); }
+.dark code[data-theme*=" "], .dark code[data-theme*=" "] span { color: var(--shiki-dark); }
+[data-line] { @apply px-4; }
+:not(pre) > code { @apply rounded bg-muted px-1.5 py-0.5 text-[0.9em] before:content-none after:content-none; }
